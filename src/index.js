@@ -1,12 +1,52 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+class HelloWorld extends React.Component{
+    constructor(){
+        super();
+        this.newname='mayank'
+    }
+    render(){
+        return(
+        <h1>{this.newname}</h1>
+        )
+    }
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Vivek extends React.Component{
+    getName(){
+        return ' john'
+    }
+    render(){
+        return(
+        <section>
+            {this.getName()}
+        </section>
+        )
+    }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class HelloWorldsimple extends React.Component{
+    render(){
+        return(
+        <h1>HelloWorldsimple</h1>
+        )
+    }
+}
+
+class Newjohn extends React.Component{
+    render(){
+        return(
+            <div>
+                <section className="foo">
+                    <HelloWorld/>
+                    <Vivek/>
+                    <HelloWorldsimple/>
+                </section>
+                <input type="text" />
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<Newjohn />,document.getElementById('root'))

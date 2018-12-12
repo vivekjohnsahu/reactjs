@@ -1,3 +1,18 @@
 .foo{
     background-color: aqua;
 }
+.fooList{
+    color: blueviolet;
+}
+.pointerHand{
+    cursor: pointer;
+}
+.completed{
+    color: orangered;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+.pointehand{
+    cursor: pointer;
+}
